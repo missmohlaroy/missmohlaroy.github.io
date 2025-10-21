@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Profile — Tursunaliyeva Mohlaroyim</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --burgundy-dark: #3b0016; /* very dark burgundy for strongest text */
+      --burgundy: #6f0026;      /* main burgundy */
+      --burgundy-light: #8b0033;/* a bit lighter burgundy */
+      --deep-blue: #002a7f;     /* very deep blue */
+      --page-bg: #5b0026;       /* page (bardoviy) background */
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: var(--page-bg);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px;
+    }
+
+    .card{
+      background: #ffffff; /* white rectangle */
+      padding:40px 48px;
+      border-radius:12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      max-width:1000px;
+      width:100%;
+      text-align:center;
+    }
+
+    .name{
+      font-weight:800;
+      font-size:80px; /* 80px as requested */
+      margin:0 0 14px 0;
+      color: var(--burgundy-dark); /* very dark burgundy */
+      line-height:0.95;
+    }
+
+    .role{
+      font-weight:700;
+      font-size:75px; /* 75px as requested */
+      margin:0 0 18px 0;
+      color: var(--burgundy-light); /* slightly lighter burgundy */
+      line-height:0.98;
+      font-style:normal;
+    }
+
+    .about{
+      font-weight:600;
+      font-size:60px; /* 60px as requested */
+      margin:0;
+      color: var(--deep-blue); /* very blue */
+      line-height:1.15;
+      white-space:pre-line; /* preserve line breaks */
+    }
+
+    /* small screens adjustments */
+    @media (max-width:720px){
+      .name{font-size:40px}
+      .role{font-size:34px}
+      .about{font-size:26px}
+      .card{padding:24px}
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 class="name">Tursunaliyeva Mohlaroyim</h1>
+    <h2 class="role">I can work with backend and frontend</h2>
+    <p class="about">I am currently a high school student.
+I am mainly studying computer science.
+I like learning languages.
+Drawing and playing chess are my hobbies.</p>
+  </div>
+</body>
+</html>
